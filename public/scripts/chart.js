@@ -1,6 +1,6 @@
-setInterval(documentOnload, 300000);
-setInterval(addTime,300000)
-setInterval(chartUpdate,290000);
+setInterval(documentOnload, 60000);
+setInterval(addTime,60000)
+setInterval(chartUpdate,10000);
 
 let TH = 1000000000000;
 let hashArray = [];
@@ -119,7 +119,7 @@ function hashRateArrayLimitSize() {
 function addTime(){
 	timeArrayLimitSize();
 	time.push(minutes + ' Minutes');
-	minutes += 5;
+	minutes += 1;
 }
 
 function timeArrayLimitSize() {

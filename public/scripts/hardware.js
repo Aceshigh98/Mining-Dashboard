@@ -1,3 +1,5 @@
+//import{ key } from '../scripts/cover'
+
 setInterval(getBitcoinPrice,2000);
 setInterval(updateDocument, 2000);
 setInterval(setDocument,5000);
@@ -39,7 +41,7 @@ function setDocument() {
 	btcRevenueUsdDoc.innerHTML = "24 Hour Revenue (USD): $" + dailyRevenueUSD.toFixed(2);
 	activeMinersDoc.innerHTML = "Active Miners: " + activeMiners;
 	inactiveMinersDoc.innerHTML = "Inactive Miners: " + inactiveMiners;
-	hashRateDoc.innerHTML = "Current Hashrate: " + currentHashrate;
+	hashRateDoc.innerHTML = "Current Hashrate: TH/s" + currentHashrate;
 	btcPriceDoc.innerHTML = "Bitcoin Price: $"+bitcoinPrice; 
 }
 

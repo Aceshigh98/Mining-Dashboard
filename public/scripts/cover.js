@@ -1,14 +1,20 @@
+var key;
 var button = document.getElementById('submit').addEventListener("click", buttonClicked);
 
+//export{key};
+let query;
+
+
+
 function buttonClicked() {
-  var key = getInputValue();
-  var query = "{getProfileActiveWorkers (mpn: BTC)}";
+  key = getInputValue();
+  query = "{getProfileActiveWorkers (mpn: BTC)}";
   retrieveAccountStatus(query, key);
 }
 
 
 function getInputValue() {
-  let key = document.getElementById("key").value;
+  key = document.getElementById("key").value;
   console.log(key);
   return key;
 }
