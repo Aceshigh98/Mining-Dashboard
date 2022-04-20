@@ -2,12 +2,24 @@ body{
     background-image:url("../images/CHAIN.gif");
     background-position: center;
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: cover;
     background-attachment: fixed;
     height:100%;
     width:100%
+    
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-image:url("../images/CHAIN.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1900px 2000px;
+    background-attachment: fixed;
+    height:100%;
+    width:100%
+  }
+}
 
 .btn-secondary,
 .btn-secondary:hover,
