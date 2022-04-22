@@ -1,3 +1,4 @@
+
 setInterval(documentOnload, 60000);
 setInterval(addTime,60000)
 setInterval(chartUpdate,10000);

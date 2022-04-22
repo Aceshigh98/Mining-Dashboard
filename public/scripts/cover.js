@@ -1,9 +1,7 @@
 var key;
 var button = document.getElementById('submit').addEventListener("click", buttonClicked);
 
-//export{key};
 let query;
-
 
 
 function buttonClicked() {
@@ -99,3 +97,5 @@ function openDashboard() {
   let targetUrl = window.open('Dashboard.html');
   targetUrl.onload = self.close();
 }
+
+export {key,button};

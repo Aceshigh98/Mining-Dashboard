@@ -1,4 +1,3 @@
-//import{ key } from '../scripts/cover'
 
 setInterval(getBitcoinPrice,2000);
 setInterval(updateDocument, 2000);
@@ -14,7 +13,6 @@ let Hash = 1000000000000;
 const btcPriceDoc = document.getElementById('btcPrice');
 const btcRevenueDoc = document.getElementById('btcRevenue');
 const btcRevenueUsdDoc = document.getElementById('btcRevenueUsd');
-const networkDifDoc = document.getElementById('networkDif');
 const activeMinersDoc = document.getElementById('activeMiners');
 const inactiveMinersDoc = document.getElementById('inactiveMiners');
 const hashRateDoc = document.getElementById('hashrate');
@@ -22,7 +20,6 @@ const hashRateDoc = document.getElementById('hashrate');
 var bitcoinPrice;
 var dailyRevenueBTC;
 var dailyRevenueUSD;
-var networkDifficulty;
 var activeMiners;
 var inactiveMiners;
 var currentHashrate;
@@ -46,7 +43,6 @@ function setDocument() {
 }
 
 function getDashboardInfo(query) {
-	//console.log("Query: " + JSON.stringify({ query }));
 	fetch('https://api.beta.luxor.tech/graphql', {
 		method: 'POST',
 		headers: {
@@ -81,7 +77,6 @@ function returnData(data, query) {
 function getBitcoinPrice() {
 	fetch('https://www.bitstamp.net/api/ticker/', {
 		method: 'GET',
- 		/* mode: 'no-cors', */
 		headers: {
 			'Content-Type': 'application/json'
 		},
