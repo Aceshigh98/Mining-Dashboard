@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "name": "bitcoinminingdashboard",
   "version": "1.0.0",
   "description": "Bitcoin Mining Dashboard Application",
